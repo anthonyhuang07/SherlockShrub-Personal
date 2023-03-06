@@ -1,0 +1,252 @@
+*,
+*:after,
+*:before {
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.hero-top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image-upload {
+    display: none;
+}
+
+#choose-file-button {
+    background-color: hsl(106, 29%, 40%);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', sans-serif;
+    transition: background-color 0.3s;
+  } #choose-file-button:hover{
+    background-color: hsl(106, 29%, 30%);
+  } #choose-file-button:active{
+    background-color: hsl(106, 29%, 20%);
+  }
+
+#upload-button {
+    background-color: hsl(106, 29%, 40%);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-family: 'Libre Baskerville', sans-serif;
+    transition: background-color 0.3s;
+} #upload-button:hover {
+    background-color: hsl(106, 29%, 30%);
+} #upload-button:active {
+    background-color: hsl(106, 29%, 20%);
+}
+
+#close-preview {
+    background-color: hsl(0, 64%, 40%);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-family: 'Libre Baskerville', sans-serif;
+    transition: background-color 0.3s;
+} #close-preview:hover {
+    background-color: hsl(0, 64%, 30%);
+} #close-preview:active {
+    background-color: hsl(0, 64%, 20%);
+}
+
+.hero-top h1 {
+    font-size: 4rem;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+  
+.image-preview {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.preview-box {
+    position: relative;
+    margin: 5% auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: hsl(126, 10%, 100%);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.hero-top h2 {
+    font-size: 2rem;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+.preview-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#preview-image{
+    margin-bottom: 1rem;
+}
+
+.preview-content img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+#results {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-box {
+    margin: 2rem;
+    text-align: center;
+    display: flex;
+    width: 90%;
+    height: auto;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-box img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.result-box h1 {
+    margin: 0 1rem 0 2rem;
+    font-family: "Special Elite"
+}
+
+.result-box h3 {
+    margin: 0 2rem 0 1rem;
+    font-family: "Special Elite"
+}
+
+.result-box p {
+    margin: 0 2rem 0 2rem;
+}
+
+.result-box a {
+    color: hsl(106, 29%, 40%);
+}
+
+.result-box span {
+    position: absolute;
+    font-family: "Special Elite";   
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-top h1 {
+        font-size: 2rem;
+        font-family: 'Libre Baskerville', sans-serif;
+    }
+
+    #TITLES{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .result-box {
+        margin: 2rem;
+        text-align: center;
+        display: flex;
+        width: 90%;
+        height: auto;
+        border-radius: 1rem;
+        background-color: hsl(0, 0%, 95%);
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .result-box img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .result-box h1 {
+        margin: 2rem 1rem 0 1rem;
+        font-family: "Special Elite"
+    }    
+
+    .result-box h3 {
+        margin: 1rem 0 2rem 0;
+        font-family: "Special Elite"
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SherlockShrub - Your Personal Plant Detective</title>
+
+    <meta content="SherlockShrub" property="og:title" />
+    <meta content="Your Personal Plant Detective" property="og:description" />
+    <meta content="https://hdsb-2023-hackathon.github.io/Anthony-Huang-HDSB-2023-Hackathon-Submission/"
+        property="og:url" />
+    <meta content="https://i.imgur.com/MZgkhIb.png" property="og:image" />
+
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/MZgkhIb.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+
+<body>
+    <div class="hero-top">
+        <div class="hero-text">
+            <div id="TITLES">
+                <h1>SherlockShrub</h1><br>
+                <h2>Your Personal Plant Detective</h2><br>
+            </div>
+            <form id="upload-form">
+                <div class="upload-container">
+                    <label>
+                        <input type="file" id="image-upload" accept="image/*" style="display:none">
+                        <button id="choose-file-button" type="button">Select your Image!</button>
+                    </label>
+                </div>
+        </div>
+
+        <div class="image-preview">
+            <div class="preview-box">
+                <div class="preview-content">
+                    <img id="preview-image" src="" alt="">
+                    <div>
+                        <button id="close-preview">Close</button>
+                        <button type="submit" id="upload-button">Upload Image!</button>
+                    </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div id="results">
+    </div>
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
