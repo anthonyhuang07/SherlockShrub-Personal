@@ -206,7 +206,7 @@ body {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     .hero-top h1 {
         font-size: 2rem;
         font-family: 'Libre Baskerville', sans-serif;
